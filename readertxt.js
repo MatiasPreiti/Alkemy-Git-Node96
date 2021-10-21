@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const streamRead = fs.createReadStream('./file.txt', { encoding: 'utf8' });
 
-function reader() {
+function readerFunction() {
   streamRead
     .on('open', () => {
       console.log('open file');
@@ -18,4 +18,4 @@ function reader() {
     });
 }
 
-exports.module = { reader };
+exports.module = { readerFunction };
