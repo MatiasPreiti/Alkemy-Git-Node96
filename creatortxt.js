@@ -21,9 +21,8 @@ creatortxt(
   14
 );
 
-function destroyer(text) {
-  console.log(text);
-  throw new Error();
+function destroyer() {
+  console.log('good job');
 }
 
 exports.module = { creatortxt, destroyer };
