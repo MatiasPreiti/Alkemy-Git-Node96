@@ -15,5 +15,15 @@ function creatortxt(text, iterations) {
     console.log('your file has been created');
   });
 }
-creatortxt('asdsada', 14);
-exports.module = { creatortxt };
+
+creatortxt(
+  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry /n',
+  14
+);
+
+function destroyer(text) {
+  console.log(text);
+  throw new Error();
+}
+
+exports.module = { creatortxt, destroyer };
