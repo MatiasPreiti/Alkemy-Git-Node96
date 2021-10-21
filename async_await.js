@@ -5,7 +5,7 @@ async function esperar4segundos() {
   destroyer('i destroy this function');
   return await new Promise((resolve) => {
     setTimeout(() => {
-      console.log(4);
+      console.error(4);
       resolve();
     }, 4000);
   });
