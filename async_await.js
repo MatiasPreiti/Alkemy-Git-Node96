@@ -1,13 +1,13 @@
 const { destroyer } = require('./creatortxt');
 
 async function esperar2segundos() {
-  console.log(3);
+  console.error(11);
   destroyer('i destroy this function');
   return await new Promise((resolve) => {
     setTimeout(() => {
-      console.log(4);
+      console.error(4);
       resolve();
-    }, 2000);
+    }, 4500);
   });
 }
 
